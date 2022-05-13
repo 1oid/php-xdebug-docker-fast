@@ -13,11 +13,8 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: testdb
-      MYSQL_USER: loid
-      MYSQL_PASSWORD: 123456
     ports:
-      - "8806:3306"
+      - "3306:3306"
   php:
     build: ./docker/php/
     depends_on:
