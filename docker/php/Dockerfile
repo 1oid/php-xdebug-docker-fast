@@ -16,3 +16,4 @@ RUN echo 'xdebug.remote_port=9000' >> /usr/local/etc/php/php.ini
 RUN echo 'xdebug.remote_enable=1' >> /usr/local/etc/php/php.ini
 RUN echo 'xdebug.remote_connect_back=1' >> /usr/local/etc/php/php.ini
 RUN echo 'extension=pdo_mysql.so' >> /usr/local/etc/php/php.ini
+RUN echo 'cgi.fix_pathinfo=1' >> /usr/local/etc/php/php.ini
