@@ -8,7 +8,7 @@ RUN apt-get update \
     && docker-php-ext-install gd
 RUN apt install -y libwebp-dev libjpeg-dev libpng-dev libfreetype6-dev
 RUN pecl install -o -f redis && rm -rf /tmp/pear && docker-php-ext-enable redis
-RUN pecl install xdebug \
+RUN pecl install xdebug-3.0.0 \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install pdo pdo_mysql \
